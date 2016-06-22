@@ -1,0 +1,4 @@
+http://api.meetup.com/AWS-Frederick-Meetup/upcoming.ical
+http://api.meetup.com/python-frederick/upcoming.ical
+http://api.meetup.com/KeyLUG/upcoming.ical
+http://api.meetup.com/FredWebTech/upcoming.ical
