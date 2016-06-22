@@ -1,5 +1,5 @@
 from icalendar import Calendar
-from datetime import datetime
+import datetime
 import pycurl
 from StringIO import StringIO
 
@@ -25,7 +25,7 @@ for i in content:
         print component.get('X-WR-CALNAME')
         print '-------------------'
       if component.name == "VEVENT":
-        print 'Summary: ' + component.get('summary')
-        print 'Date: ' + str(datetime.date(component.get('dtstart').dt))
-        print 'URL: ' + component.get('url')
+        print 'Summary: %s' % component.get('summary')
+        print 'Date: %s' % str(component.get('dtstart').dt.strftime("%Y-%m-%d %H:%M"))
+        print 'URL: %s' % component.get('url')
         print '-------------------'
