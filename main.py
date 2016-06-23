@@ -7,7 +7,7 @@ def get_cal(url):
   buffer = StringIO()
   c = pycurl.Curl()
   c.setopt(c.URL, url.rstrip('\n'))
-  c.setopt(c.WRITEDATA, buffer)
+  c.setopt(c.WRITEFUNCTION, buffer.write)
   c.perform()
   c.close()
   body = buffer.getvalue()
@@ -35,7 +35,7 @@ def main():
     data['events'] = events
     calendars.append(data)
 
-  print(json.dumps(calendars))
+  return json.dumps(calendars)
 
 if __name__ == "__main__":
-  main()
+  print main()
