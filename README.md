@@ -8,7 +8,7 @@ Run:
 
 Output will look like:
 ```
-$ python test.py | python -mjson.tool
+$ python main.py | python -mjson.tool
 [
     {
         "calendar_name": "Upcoming in Amazon Web Services - Frederick",
