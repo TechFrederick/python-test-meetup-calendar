@@ -37,5 +37,3 @@ def handle(context, event):
     calendars.append(data)
 
   return { 'calendars' : calendars }
-
-print handle(0,0)

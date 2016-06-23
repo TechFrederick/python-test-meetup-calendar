@@ -1,0 +1,9 @@
+
+{
+  "name": "python-meetup-cal",
+  "description": "python job to pull meetup calendar info",
+  "memory": 128,
+  "timeout": 5,
+  "role": "arn:aws:iam::464631411360:role/python-meetup-cal_lambda_function",
+  "environment": {}
+}
